@@ -1,0 +1,22 @@
+package principal;
+
+import java.util.Scanner;
+
+public class atividade_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int num1;
+		int num2;
+		int num3;
+		
+		Scanner leia = new Scanner (System.in);
+		
+		System.out.println("Entre com o primeiro numero: ");
+		System.out.println("Entre como segundo numero:");
+		System.out.println("Entre com o terceiro numero:");
+	}
+
+}

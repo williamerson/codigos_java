@@ -1,0 +1,16 @@
+package entities;
+
+public class AreaTerreno {
+	
+	public double base;
+	public double altura;
+	public double areaTotal;
+	
+	public  void retorneAreaTotal(double areaTotal) {
+		areaTotal = base * altura;
+		
+				
+		
+	}
+
+}

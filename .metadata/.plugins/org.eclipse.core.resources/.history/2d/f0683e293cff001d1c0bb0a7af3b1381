@@ -1,0 +1,18 @@
+package principal;
+
+import java.util.Scanner;
+
+public class atividade_3 {
+    public static double calcularValorVenda(double valorDoProduto) {
+        double taxaLucro = 0.1; // Taxa fixa de lucro de 10%
+        double valorVenda = valorDoProduto * (1 + taxaLucro);
+        return valorVenda;
+    }
+
+    public static void main(String[] args) {
+        double valorDoProduto = 10.00;
+
+        double valorVenda = calcularValorVenda(valorDoProduto);
+        System.out.println("O valor de venda do produto é: " + valorVenda);
+    }
+}

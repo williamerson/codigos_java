@@ -1,0 +1,44 @@
+package principal;
+
+import java.util.Scanner;
+
+	class Triangulo {
+	    private int lado1;
+	    private int lado2;
+	    private int lado3;
+
+	    public Triangulo(int lado1, int lado2, int lado3) {
+	        this.lado1 = lado1;
+	        this.lado2 = lado2;
+	        this.lado3 = lado3;
+	    }
+
+	    public String verificarTipo() {
+	        if (lado1 == lado2 && lado2 == lado3) {
+	            return "Equilátero";
+	        } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+	            return "Isósceles";
+	        } else {
+	            return "Escaleno";
+	        }
+	    }
+	}
+
+	public class Main {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.println("Digite o valor do lado 1: ");
+	        int lado1 = scanner.nextInt();
+
+	        System.out.println("Digite o valor do lado 2: ");
+	        int lado2 = scanner.nextInt();
+
+	        System.out.println("Digite o valor do lado 3: ");
+	        int lado3 = scanner.nextInt();
+
+	        Triangulo triangulo = new Triangulo(lado1, lado2, lado3);
+	        String tipoTriangulo = triangulo.verificarTipo();
+	        System.out.println("O triângulo é do tipo: " + tipoTriangulo);
+	    }
+	}

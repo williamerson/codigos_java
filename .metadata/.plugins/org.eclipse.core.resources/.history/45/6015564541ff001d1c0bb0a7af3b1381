@@ -1,0 +1,22 @@
+package principal;
+
+public class atividade_3 {
+	
+//	3) Faça um programa com uma função que recebe dois parâmetros (valorDoProduto, lucroProduto) 
+//os produtos a serem vendidos recebem o preço de custo e retorna o valor com uma porcentagem aplicada de lucro, 
+//por exemplo: se um produto custa 10,00 e é aplicada uma taxa de 10 % de lucro, o produto será vendido por 11,00;
+	
+    public static double calcularValorVenda(double valorDoProduto) {
+        double taxaLucro = 0.1; // Taxa fixa de lucro de 10%
+        double valorVenda = valorDoProduto * (1 + taxaLucro);
+        return valorVenda;
+    }
+
+    public static void main(String[] args) {
+        double valorDoProduto = 10.00;
+        
+
+        double valorVenda = calcularValorVenda(valorDoProduto);
+        System.out.println("O valor de venda do produto é: " + valorVenda);
+    }
+}

@@ -1,0 +1,23 @@
+//Faça um aplicativo que receba o ano de nascimento e o ano atual e mostre na tela sua idade;
+package primary;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+public class Idade_atual {
+
+	public static void main(String[] args) {
+	
+		GregorianCalendar hoje = new GregorianCalendar();
+		Scanner leia = new Scanner(System.in);
+		
+		int ano = hoje.get(Calendar.YEAR);
+		int anoNasc;
+		
+		System.out.println("Informe o ano que você nasceu: ");
+		anoNasc = leia.nextInt();
+		
+		int anoAtu = (ano - anoNasc);
+		
+		System.out.println("voce tem " + anoAtu + " anos.");

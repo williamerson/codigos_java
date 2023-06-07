@@ -1,0 +1,16 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+//		Faça um programa que receba 3 valores que representam um triangulo, a partir desses valores recebidos retorne se é um triangulo isósceles, equilátero, escaleno.
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Primeiro valor: ");
+		double
+	}
+
+}

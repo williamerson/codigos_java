@@ -1,0 +1,27 @@
+package principal;
+
+import entities.ClasseFuncionario.Funcionario;
+
+public class Program {
+
+	public static void main(String[] args) {
+		  public void exibirDados() {
+		        String nome;
+				System.out.println("Nome: " + nome);
+		        System.out.println("Cargo: " + cargo);
+		        String salario;
+				System.out.println("Salário bruto atualizado: R$" + salario);
+		    }
+ {
+		        // Criando um objeto "funcionario" e passando os dados iniciais
+		        Funcionario funcionario = new Funcionario("João Silva", "Gerente", 4000);
+
+		        // Calculando o bônus e exibindo os dados do funcionário
+		        funcionario.calcularBonus();
+		        funcionario.exibirDados();
+		    }
+		
+
+	}
+
+}

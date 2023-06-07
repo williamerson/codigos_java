@@ -1,0 +1,26 @@
+package principal;
+
+import java.util.Scanner;
+
+import entities.calcTriangulo;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		calcTriangulo triangulo = new calcTriangulo();
+
+		System.out.println("lado1: ");
+		triangulo.lado1 = sc.nextInt();
+
+		System.out.println("lado2: ");
+		triangulo.lado2 = sc.nextInt();
+
+		System.out.println("lado3: ");
+		triangulo.lado3 = sc.nextInt();
+
+	}
+
+}

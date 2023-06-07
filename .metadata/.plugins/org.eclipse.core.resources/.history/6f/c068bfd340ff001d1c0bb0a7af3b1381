@@ -1,0 +1,25 @@
+package principal;
+
+import java.util.Scanner;
+
+public class margemDeLucro {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.print("Entre com o valor do produto: ");
+		double valorDoProduto = sc.nextDouble();
+		System.out.println("Entre com a porcentagem a ser aplicada: ");
+		double porcetagem = sc.nextDouble();
+		
+				
+		sc.close();
+
+	}
+	static void retornaValorVenda(double valorProduto, double porcentagem) {
+		
+		double valorVenda = valorProduto + (porcentagem /100);
+	}
+
+}

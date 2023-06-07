@@ -1,0 +1,32 @@
+package principal;
+
+import java.util.Scanner;
+
+import entities.AreaTerreno;
+
+public class Program {
+
+	public static void main(String[] args) {
+//		Faça um programa com a classe areaTerreno que tem o atributo area e o metodo retorna area com os atributos.
+//		largura e comprimento. na classe principal peça para o usuario entrar com os dados de largura e comprimento e retorne o valor do calculo 
+//		feito no metodo da classe AreaTerreno
+			Scanner sc = new Scanner (System.in);
+			
+			AreaTerreno areaTerreno = new AreaTerreno();
+			
+			System.out.print("Valor da base: ");
+			double base = sc.nextDouble();
+			System.out.print("Valor da altura: ");
+			double altura = sc.nextDouble();
+			System.out.print("Valor total da área: ");
+			System.out.println();
+			
+			areaTerreno.retorneAreaTotal(base, altura);
+			
+			System.out.println("Base: " + areaTerreno.areaTotal);
+		
+			
+			sc.close();
+	}
+
+}

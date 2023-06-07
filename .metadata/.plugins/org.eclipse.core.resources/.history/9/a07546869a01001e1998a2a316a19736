@@ -1,0 +1,18 @@
+package entities;
+
+public class Televisor {
+	
+	public int canal;
+	public int volume;
+	public int ligado;
+	
+	public void aumentarVolume() {
+		
+		if(volume >= 0 && volume <= 16) {
+			volume += 1;
+		}
+		
+		
+	}
+	
+}

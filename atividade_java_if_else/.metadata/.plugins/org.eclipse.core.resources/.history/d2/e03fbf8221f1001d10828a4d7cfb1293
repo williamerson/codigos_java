@@ -1,0 +1,23 @@
+package principal;
+
+import java.util.Scanner;
+
+public class atividade_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Faça um programa que leia 3 números e mostre o maior deles;
+		
+		public static void main(String[] args) {
+			
+			int num1;
+			int num2;
+			int num3;
+			
+			Scanner leia = new Scanner (System.in);
+			
+			System.out.println(Math.max(5, 20));
+		}
+	}
+
+}

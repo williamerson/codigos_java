@@ -1,0 +1,17 @@
+package entities;
+
+public class Conta {
+	
+	public int numeroConta;
+	public int agencia;
+	public double saldo;
+	public String titular;
+	
+	public void depositar(double valorDepositado) {
+		saldo += valorDepositado;
+	}
+	
+	public void sacar(double valorSacado) {
+		saldo -= valorSacado;
+	}
+}

@@ -1,0 +1,31 @@
+package entities;
+
+public class ClasseFuncionario {
+	public class Funcionario {
+		private String cargo;
+		private double salario;
+
+		// Construtor da classe Funcionario
+		public Funcionario(String nome, String cargo, double salario) {
+			this.cargo = cargo;
+			this.salario = salario;
+		}
+
+		// Método para calcular o bônus e atualizar o salário
+		public void calcularBonus() {
+			if (cargo.equalsIgnoreCase("gerente") && salario < 5000) {
+				double bonus = salario * 0.015;
+				salario += bonus;
+			} else if (cargo.equalsIgnoreCase("funcionario") && salario < 1500) {
+				double bonus = salario * 0.02;
+				salario += bonus;
+			}
+		}
+
+		public void exibirDados() {
+			// TODO Auto-generated method stub
+
+		}
+
+	}
+}

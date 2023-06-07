@@ -1,0 +1,32 @@
+package principal;
+
+import java.util.Scanner;
+
+import entities.ClasseFuncionario.Funcionario;
+
+public class Program {
+
+	public static void main(String[] args) {
+		{
+
+			Scanner sc = new Scanner(System.in);
+
+			String nome;
+			System.out.println("Nome: " + nome);
+
+			String cargo;
+			System.out.println("Cargo: " + cargo);
+			String salario;
+			System.out.println("Salário bruto atualizado: R$" + salario);
+		}
+		{
+			// Criando um objeto "funcionario" e passando os dados iniciais
+			Funcionario funcionario = new Funcionario("João Silva", "Vendedor", 4000);
+
+			// Calculando o bônus e exibindo os dados do funcionário
+			funcionario.calcularBonus();
+			funcionario.exibirDados();
+		}
+
+	}
+}

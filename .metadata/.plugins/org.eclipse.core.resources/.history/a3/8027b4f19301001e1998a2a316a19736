@@ -1,0 +1,59 @@
+package entities;
+
+public class classeTelevisor {
+		
+	public class Televisor {
+	    public int canal;
+	    public int volume;
+	    public boolean ligado;
+
+	    public Televisor() {
+	        this.canal = 1;
+	        this.volume = 0;
+	        this.ligado = false;
+	    }
+
+	    public void aumentarVolume() {
+	        if (ligado && volume < 10) {
+	            volume++;
+	        }
+	    }
+
+	    public void reduzirVolume() {
+	        if (ligado && volume > 0) {
+	            volume--;
+	        }
+	    }
+
+	    public void subirCanal() {
+	        if (ligado && canal < 16) {
+	            canal++;
+	        }
+	    }
+
+	    public void descerCanal() {
+	        if (ligado && canal > 1) {
+	            canal--;
+	        }
+	    }
+
+	    public void ligarTelevisor() {
+	        ligado = true;
+	    }
+
+	    public void desligarTelevisor() {
+	        ligado = false;
+	    }
+
+	    public void mostrarStatus() {
+	    	if (ligado == true) {
+	    		 
+	    	}
+	        System.out.println("Status do Televisor:");
+	        System.out.println("Canal: " + canal);
+	        System.out.println("Volume: " + volume);
+	        System.out.println("Ligado: " + (ligado ? "Sim" : "Não"));
+	    }
+	}
+
+}

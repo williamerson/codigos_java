@@ -1,0 +1,37 @@
+package principal;
+
+import java.util.Scanner;
+
+public class atividade_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int num1;
+		int num2;
+		int num3;
+		
+		Scanner leia = new Scanner (System.in);
+		
+		System.out.println("Entre com o primeiro numero: ");
+		num1 = leia.nextInt();
+		
+		System.out.println("Entre como segundo numero:");
+		num2 = leia.nextInt();
+		
+		System.out.println("Entre com o terceiro numero:");
+		num3 = leia.nextInt();
+		
+		/*
+		 * if(num1 > num2) || (num3) {
+		 * System.out.println ("numero1 é o maior");
+			
+			
+			
+		}
+		 */
+		System.out.println(Math.max(num1, num2));
+	}
+
+}

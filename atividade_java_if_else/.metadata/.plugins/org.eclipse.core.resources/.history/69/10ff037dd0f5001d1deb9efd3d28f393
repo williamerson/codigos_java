@@ -1,0 +1,68 @@
+package principal;
+
+import java.util.Random;	
+
+public class Program {
+
+	public static void main(String[] args) {
+		/*Faça um programa para gerar 3 números aleatórios para 3 dados, mostre a soma dos números que saíram. 
+		 * Se 2 dados saírem com a mesma numeração o jogador ganha 2 pontos de bônus, se os 3 dados saírem 
+		 * com a mesma numeração ele ganha 6 pontos de bônus e deve aparecer a mensagem "você é muito sortudo". 
+		 * Se o total da soma dos dados mais o bônus for menor que 15 o jogador perde e apresenta a mensagem "Lamento, 
+		 * mas você perdeu" , se for maior ou igual a 15 ele ganha e apresenta a mensagem "
+
+		parabéns, você ganhou!" .
+		*/
+		Random aleatorio = new Random();
+		
+		int valor1 = aleatorio.nextInt(6) + 1 ;
+	    System.out.println("Primeiro número gerado: " + valor1);
+	    
+	    int valor2 = aleatorio.nextInt(6) + 1 ;
+	    System.out.println("Segundo número gerado: " + valor2);
+	    
+	    int valor3 = aleatorio.nextInt(6) + 1 ;
+	    System.out.println("Terceiro gerado: " + valor3);
+		
+	    int soma = (valor1 + valor2 + valor3);
+	    System.out.println("O valor total dos três numeros aleatorios é: " + soma);
+	    
+	    
+	    if (valor1 == valor2 && valor1 == valor3 && valor2 == valor3) {
+	    	System.out.println("Voce é muito sortudo, acaba de ganhar 6 pontos de bônus!!!");
+	    	
+	    	
+	    if (soma + 6 >= 15) {
+	    		System.out.println("Lamento, voçê perdeu");
+	    		System.exit(0);
+	    		
+	    	}
+	    
+	    else {
+	    		System.out.println("Mas infelizmente voçê nao atingiu mais que 15 pontos somado com o bônus");
+	    		System.exit(0);
+	    	}
+	    		    	
+	    }
+	    
+	    if(valor1 == valor2 || valor1 == valor3 || valor2 ==valor3) {
+			 System.out.println ("Parabéns, voce acaba de ganhar 2 pontos de bônus!!! ");
+			 			 
+		if (soma + 6 < 15) {
+		    		System.out.println("parabens, voçê ganhou!!!");
+		    		System.exit(0);
+		    }
+			 
+	    } else {
+	    	System.out.println("Tente novamente!!!");
+	    }
+			
+			 
+			
+	    
+	    
+		
+		
+	}
+
+}

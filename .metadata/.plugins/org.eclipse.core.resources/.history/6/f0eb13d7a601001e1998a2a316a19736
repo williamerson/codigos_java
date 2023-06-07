@@ -1,0 +1,72 @@
+/*package principal;
+
+import java.util.Scanner;
+
+import entities.ClasseFuncionario.Funcionario;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Funcionario funcionario = new Funcionario("João Silva", "Vendedor", 4000);
+
+		String nome;
+		System.out.println("Nome: " + nome);
+
+		String cargo;
+		System.out.println("Cargo: " + cargo);
+		String salario;
+		System.out.println("Salário bruto atualizado: R$" + salario);
+	}
+
+	{
+		// Criando um objeto "funcionario" e passando os dados iniciais
+
+		// Calculando o bônus e exibindo os dados do funcionário
+		funcionario.calcularBonus();
+		funcionario.exibirDados();
+
+	}
+}
+*/
+public class Funcionario {
+	private String nome;
+	private String cargo;
+	private double salario;
+
+	// Construtor da classe Funcionario
+	public Funcionario(String nome, String cargo, double salario) {
+		this.nome = nome;
+		this.cargo = cargo;
+		this.salario = salario;
+	}
+
+	// Método para calcular o bônus e atualizar o salário
+	public void calcularBonus() {
+		if (cargo.equalsIgnoreCase("gerente") && salario < 5000) {
+			double bonus = salario * 0.015;
+			salario += bonus;
+		} else if (cargo.equalsIgnoreCase("funcionario") && salario < 1500) {
+			double bonus = salario * 0.02;
+			salario += bonus;
+		}
+	}
+
+	// Método para exibir os dados do funcionário
+	public void exibirDados() {
+		System.out.println("Nome: " + nome);
+		System.out.println("Cargo: " + cargo);
+		System.out.println("Salário bruto atualizado: R$" + salario);
+	}
+
+	// Método principal (main) para teste
+	public static void main(String[] args) {
+		// Criando um objeto "funcionario" e passando os dados iniciais
+		Funcionario funcionario = new Funcionario("João Silva", "Gerente", 4000);
+
+		// Calculando o bônus e exibindo os dados do funcionário
+		funcionario.calcularBonus();
+		funcionario.exibirDados();
+	}
+}

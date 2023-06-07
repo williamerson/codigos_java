@@ -1,0 +1,21 @@
+package principal;
+
+
+public static void main(String[] args) {
+	
+	    (Scanner scanner = new Scanner(System.in)) {
+				System.out.println("Digite o valor do lado 1: ");
+				int lado1 = scanner.nextInt();
+
+				System.out.println("Digite o valor do lado 2: ");
+				int lado2 = scanner.nextInt();
+
+				System.out.println("Digite o valor do lado 3: ");
+				int lado3 = scanner.nextInt();
+
+				Triangulo triangulo = new Triangulo(lado1, lado2, lado3);
+				String tipoTriangulo = triangulo.verificarTipo();
+				System.out.println("O triângulo é do tipo: " + tipoTriangulo);
+			}
+	    }
+	}
